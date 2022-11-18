@@ -27,11 +27,11 @@ function App() {
         <NavBar className='nav' />
         <Routes className='content'>
           <Route exact path="/" element={<LandingPage />} />
-          <Route exact path="/iu-fanpage" element={<LandingPage />} />
-          <Route exact path="/login" element={<LoginPage />} />
-          <Route exact path="/register" element={<RegisterPage />} />
-          <Route exact path='/notice_board' element={<NoticeBoard />} />
-          <Route exact path='/news_board' element={<NewsBoard />} />
+          {/* <Route exact path="/iufanpage" element={<LandingPage />} /> */}
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/register" element={<RegisterPage />} />
+          <Route path='/notice_board' element={<NoticeBoard />} />
+          <Route path='/news_board' element={<NewsBoard />} />
         </Routes>
         <Footer className='footer' />
       </div>
