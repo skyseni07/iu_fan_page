@@ -1,4 +1,5 @@
 import {
+  HashRouter,
   BrowserRouter as Router,
   Routes,
   Route
@@ -26,6 +27,7 @@ function App() {
         <NavBar className='nav' />
         <Routes className='content'>
           <Route exact path="/" element={<LandingPage />} />
+          <Route exact path="/iufanpage" element={<LandingPage />} />
           <Route exact path="/login" element={<LoginPage />} />
           <Route exact path="/register" element={<RegisterPage />} />
           <Route exact path='/notice_board' element={<NoticeBoard />} />
