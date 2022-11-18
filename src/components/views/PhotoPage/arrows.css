@@ -1,0 +1,10 @@
+button{
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+
+.arrow_btn{
+  font-size: 23px;
+  color: rgb(153, 153, 153);
+}

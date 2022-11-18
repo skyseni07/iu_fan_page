@@ -1,0 +1,26 @@
+.card {
+  display: inline-block;
+  width: 268px;
+  height: 268px;
+  margin: 0px 5px;
+  border: none;
+  user-select: none;
+
+  img {
+    width: 268px;
+    height: 268px;
+  }
+}
+
+//모달창 내 닫기 버튼
+.close_btn {
+  position: absolute;
+  top:-10px;
+  left: 569px;
+  color: var(--true-white--);
+  font-size: 35px;
+    
+  button {
+    padding: 0px;
+  }
+}

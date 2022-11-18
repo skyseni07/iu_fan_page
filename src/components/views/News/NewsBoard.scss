@@ -1,0 +1,158 @@
+* {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-decoration: none;
+}
+
+.news_board {
+        display: flex;
+        flex-direction: column;
+        width: 1248px;
+        height: 60vh;
+        margin: auto;
+        background: var(--background--);
+        font-family: 'Nanum Gothic', sans-serif;
+        overflow: hidden;
+        overflow-y: auto;
+
+        .board {
+                .container {
+                        width: 100%;
+
+                        .board-table {
+                                width: 70%;
+                                margin: 10px auto;
+                                font-size: 15px;
+                                border-collapse: collapse;
+                                border-top: 1px solid var(--board-grey--);
+                                border-bottom: 0.6px solid var(--board-grey--);
+                                border-spacing: 0;
+
+                                th,
+                                td {
+                                        padding: 12px 0;
+                                }
+
+                                thead {
+                                        font-size: 16px;
+
+                                        .th-num {
+                                                width: 50px;
+                                                text-align: center;
+                                        }
+                                }
+
+                                tbody {
+                                        a {
+                                                display: inline-block;
+                                                line-height: 1.4;
+                                                word-break: break-all;
+                                                vertical-align: middle;
+                                                color: var(--dark-grey--);
+                                                
+                                                &:hover {
+                                                        text-decoration:underline;
+                                                }
+                                        }
+
+                                        td {
+                                                text-align: center;
+                                                border-top: 1px solid var(--light-grey--);
+                                        }
+        
+                                        th {
+                                                text-align: left;
+                                                padding-left: 28px;
+                                                padding-right: 14px;
+                                                border-top: 1px solid var(--light-grey--);
+                                        }
+                                }
+                        }
+                }
+
+                .btns {
+                        display: flex;
+                        justify-content: space-between;
+                        width: 70%;
+                        margin: 5px auto;
+                        padding: 2px;
+
+                        a {
+                                justify-content: flex-end;
+                                text-align: center;
+                                width: 60px;
+                                margin-right: 9px;
+                                border-radius: 3px;
+                                color: var(--black--);
+                                font-size: 16px;
+                                text-transform: uppercase;
+                                font-weight: 600;
+
+                                &:hover {
+                                        color: var(--grey--);
+                                }
+                        }
+
+                        ul {
+                                display: flex;
+                                margin-right: -10px;
+                        }
+                }
+        }
+
+        .content {
+                width: 67%;
+                margin: 25px auto 70px;
+                padding: 10px;
+
+                h2 {
+                        margin: 30px;
+                        text-align: center;
+                }
+
+                form {
+                        display: flex;
+                        flex-direction: column;
+                        text-align: center;
+
+                        input,
+                        textarea {
+                                width: 100%;
+                                margin: 6px 0;
+                                padding: 12px;
+                                background: var(--input-white--);
+                                font-size: 15px;
+                                border: 0;
+                                outline: none;
+                                border-radius: 10px;
+                                box-shadow: inset 7px 2px 10px var(--shadow-grey--), inset -5px -5px 12px var(--shadow-white--);
+                        }
+
+                        .create_btn, 
+                        .update_btn {
+                                cursor: pointer;
+                                display: flex;
+                                justify-content: center;
+                                width: 130px;
+                                margin: 0px auto 15px;
+                                padding: 15px 45px;
+                                border: none;
+                                border-radius: 3px;
+                                outline: none;
+                                font-size: 12px;
+                                font-weight: bold;
+                                letter-spacing: 1px;
+                                text-transform: uppercase;
+                                transition: transform 80ms ease-in;
+                                box-shadow: -5px -5px 10px var(--shadow-white--), 5px 5px 8px var(--shadow-grey--); 
+                        }
+                }
+        }
+}
+
+@media screen and (max-width: 1248px) {
+        .news_board {
+                width: 100%;
+        }
+}

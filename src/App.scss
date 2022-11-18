@@ -1,0 +1,44 @@
+.App {
+  background-color: rgb(232, 232, 232);
+
+  .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 40px auto 30px;
+
+    p {
+      height: 28px;
+      margin: 0px;
+      color: var(--grey--);
+      font-size: 17px;
+      font-weight: 500;
+      font-family: 'Nunito', sans-serif;
+      text-transform: uppercase;
+    }
+
+    .line {
+      position: relative;
+      height: 15px;
+
+      hr {
+        position: absolute;
+        width: 166px;
+        top: calc(50% - 1px);
+        left: calc(50% - 83px);
+        border-top: 1.4px solid var(--light-grey--);
+      }
+
+      .rectangle {
+        position: absolute;
+        width: 40px;
+        height: 7px;
+        top: calc(50% - 3.5px);
+        left:calc(50% - 20px);
+        background-color: var(--burgundy--);
+      }
+    }
+  }
+}

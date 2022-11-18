@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap');
+
+:root {
+  --burgundy--:#942828;
+  --black--: #0B0B0D;
+  --dark-grey--: #333333;
+  --grey--: #707070;
+  --light-grey--:#dddddd;
+  --true-white--:white;
+
+  --input-white--:#eee;
+  --shadow-white--:#fff;
+  --shadow-grey--:#babebc;
+  --board-grey--:#d8d8d8;
+  --background--: #ebecf0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Noto Sans KR', sans-serif;
+  padding: 0;
+  margin: 0;
+}
