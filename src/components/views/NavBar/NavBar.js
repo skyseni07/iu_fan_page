@@ -29,10 +29,10 @@ function NavBar() {
       </div>
 
       <ul className='bottom_menu'>
-        <li><Link to='/iu_fan_page'>HOME</Link></li>
+        <li><Link to='/iu_fanpage'>HOME</Link></li>
         <li><Link to='/notice_board'>NOTICE</Link></li>
         <li><Link to='/news_board'>NEWS</Link></li>
-        <li><Link to='/iu_fan_page' state={{ value: true }}>
+        <li><Link to='/iu_fanpage' state={{ value: true }}>
           PHOTO
         </Link></li>
       </ul>
