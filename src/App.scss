@@ -42,3 +42,11 @@
     }
   }
 }
+
+/* 1279px 이하 */
+@media screen and (max-width: 1279px) {
+	/* header */
+	.App  {
+    // overflow: hidden;
+  }
+}

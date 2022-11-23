@@ -1,5 +1,4 @@
 import {
-  HashRouter,
   BrowserRouter as Router,
   Routes,
   Route
@@ -7,7 +6,6 @@ import {
 import LandingPage from './components/views/LandingPage/LandingPage';
 import LoginPage from './components/views/LoginPage/LoginPage';
 import RegisterPage from './components/views/RegisterPage/RegisterPage';
-// import Auth from './hoc/auth'
 import Footer from './components/views/Footer/Footer';
 import NavBar from './components/views/NavBar/NavBar';
 import NoticeBoard from './components/views/Notice/NoticeBoard';
@@ -15,11 +13,6 @@ import NewsBoard from './components/views/News/NewsBoard';
 import './App.scss';
 
 function App() {
-  // const AuthLandingPage = Auth(LandingPage, null);
-  // const AuthLoginPage = Auth(LoginPage, false);
-  // const AuthRegisterPage = Auth(RegisterPage, false);
-  // const AuthNotice = Auth(NoticeBoard, true);
-  // const AuthNews = Auth(NewsBoard, true);
 
   return (
     <Router>
@@ -27,7 +20,6 @@ function App() {
         <NavBar className='nav' />
         <Routes className='content'>
           <Route exact path="/iu_fanpage" element={<LandingPage />} />
-          {/* <Route exact path="/iufanpage" element={<LandingPage />} /> */}
           <Route path="/login" element={<LoginPage />} />
           <Route path="/register" element={<RegisterPage />} />
           <Route path='/notice_board' element={<NoticeBoard />} />

@@ -8,8 +8,9 @@
 .notice_board {
         display: flex;
         flex-direction: column;
-        width: 1248px;
-        height: 60vh;
+        width: 1300px;
+        max-width: 100%;
+        height: 64vh;
         margin: auto;
         background: var(--background--);
         font-family: 'Nanum Gothic', sans-serif;
@@ -151,8 +152,8 @@
         }
 }
 
-@media screen and (max-width: 1248px) {
-        .notice_board {
-                width: 100%;
-        }
+@media screen and (max-width: 350px) {
+        .notice_board{
+                overflow-x: auto;
+        }  
 }

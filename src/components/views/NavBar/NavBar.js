@@ -1,12 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from "react-router-dom";
 import './NavBar.scss'
-// import axios from 'axios';
-// import { useNavigate } from 'react-router-dom';
+import { TbMenu2, TbSearch } from "react-icons/tb";
 
 function NavBar() {
-  // const navigate = useNavigate();
-
   const onClickHandler = () => {
     // axios.get('/api/users/logout')
     //   .then(response => {
@@ -19,24 +16,28 @@ function NavBar() {
     //   })
   }
 
+
+
   return (
     <div className='nav'>
       <div className='top_menu'>
         <Link to='/register'>JOIN</Link>
         <Link to='/login'>LOGIN</Link>
-        <button onClick={onClickHandler} className='logout_btn'>
+        {/* <button onClick={onClickHandler} className='logout_btn'>
           LOGOUT
-        </button>
+        </button> */}
       </div>
 
-      <div className='bottom_menu'>
-        <Link to='/iu_fanpage'>HOME</Link>
-        <Link to='/notice_board'>NOTICE</Link>
-        <Link to='/news_board'>NEWS</Link>
-        <Link to='/iu_fanpage' state={{ value: true }}>
+      <ul className='bottom_menu'>
+        <li><Link to='/iu_fanpage'>HOME</Link></li>
+        <li><Link to='/notice_board'>NOTICE</Link></li>
+        <li><Link to='/news_board'>NEWS</Link></li>
+        <li><Link to='/iu_fanpage' state={{ value: true }}>
           PHOTO
-        </Link>
-      </div>
+        </Link></li>
+      </ul>
+
+
     </div >
   )
 }

@@ -8,8 +8,9 @@
 .news_board {
         display: flex;
         flex-direction: column;
-        width: 1248px;
-        height: 60vh;
+        width: 1300px;
+        max-width: 100%;
+        height: 64vh;
         margin: auto;
         background: var(--background--);
         font-family: 'Nanum Gothic', sans-serif;
@@ -104,7 +105,7 @@
         .content {
                 width: 67%;
                 margin: 25px auto 70px;
-                padding: 10px;
+                padding:0px;
 
                 h2 {
                         margin: 30px;
@@ -151,8 +152,8 @@
         }
 }
 
-@media screen and (max-width: 1248px) {
-        .news_board {
-                width: 100%;
-        }
+@media screen and (max-width: 350px) {
+        .news_board{
+                overflow-x: auto;
+        }  
 }

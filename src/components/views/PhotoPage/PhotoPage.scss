@@ -11,3 +11,28 @@
   }
 }
 
+
+@media screen and (max-width: 750px) {
+  .photo_page {
+    .photos_area {
+      width:518px;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .photo_page {
+    .photos_area {
+      width:350px;
+    }
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .photo_page {
+    .photos_area {
+      width:245px;
+    }
+  }
+}
+

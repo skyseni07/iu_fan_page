@@ -3,26 +3,26 @@
         flex-direction: column;
         align-items: center;
         background-color: var(--background--);
-        width: 1248px;
-        height: 60vh;
+        width: 1300px;
+        max-width: 100%;
+        height: 64vh;
         margin: auto;
-        overflow: hidden;
         overflow-y: auto;
 
-        .new_container{
+        .new_container {
                 margin-bottom: 10px;
 
                 .new {
                         display: grid;
                         grid-template-columns: 1fr 1fr;
                         grid-gap: 20px;
-                        width:822px;
+                        width: 822px;
                         margin: 0px auto;
-                
+
                         .Notice,
                         .News {
                                 font-size: 16px;
-                                
+
                                 a {
                                         color: var(--black--);
                                 }
@@ -30,11 +30,53 @@
                                 h2 {
                                         margin: 0;
                                 }
-                                
+
                                 ul {
                                         padding: 1px;
                                         list-style: none;
                                 }
+                        }
+                }
+        }
+}
+
+@media screen and (max-width: 1367px) {
+        .landing {
+                height: 64vh;
+                overflow-x: hidden;
+        }
+}
+
+@media screen and (max-width: 750px) {
+        .landing {
+                height: 68.5vh;
+
+                .new_container {
+                        .new {
+                                width: 550px;
+                                align-items: center;
+                                justify-content: center;
+                                display: flex;
+                                flex-direction: column;
+                        }
+
+                        .Notice {
+                                margin-left: -23px;
+                                margin-bottom: 5px;
+                        }
+                }
+        }
+}
+
+@media screen and (max-width: 350px) {
+        .landing {
+                .new_container {
+                        .new {
+                                max-width: 20%;
+                        }
+
+                        .Notice {
+                                margin-left: 0px;
                         }
                 }
         }
@@ -51,10 +93,4 @@
 ::-webkit-scrollbar-thumb {
         border-radius: 8px;
         background-color: rgb(214, 214, 214);
-}
-
-@media screen and (max-width: 1248px) {
-        .landing {
-                width: 100%;
-        }
 }

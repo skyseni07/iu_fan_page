@@ -7,6 +7,8 @@ import { AiFillCloseSquare } from "react-icons/ai";
 // 모달창 스타일링
 const customStyles = {
   content: {
+    // width:'30%',
+    // height:'30%',
     top: '50%',
     left: '50%',
     right: 'auto',
@@ -64,7 +66,8 @@ export function Card({ title, itemId, content }: { title: string; itemId: string
       <img
         src={`${process.env.PUBLIC_URL}/assets/${content}`}
         style={{
-          width:'590px'
+          width:'100%',
+          height:'100%'
       }}/>
 
     </Modal>

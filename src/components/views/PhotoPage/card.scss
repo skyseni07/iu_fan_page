@@ -15,12 +15,36 @@
 //모달창 내 닫기 버튼
 .close_btn {
   position: absolute;
-  top:-10px;
-  left: 569px;
+  top: -10px;
+  left:0%;
   color: var(--true-white--);
   font-size: 35px;
-    
+
   button {
     padding: 0px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .card {
+    width: 150px;
+    height: 150px;
+
+    img {
+      width: 150px;
+      height: 150px;
+    }
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .card {
+    width: 90px;
+    height: 90px;
+
+    img {
+      width: 90px;
+      height: 90px;
+    }
   }
 }

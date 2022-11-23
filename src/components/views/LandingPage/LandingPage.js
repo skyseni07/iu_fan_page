@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from 'react'
-// import { useNavigate } from 'react-router-dom';
 import './LandingPage.scss'
 import PhotoPage from '../PhotoPage/PhotoPage';
 import NewsNav from '../News/NewsNav';
@@ -7,8 +6,7 @@ import NoticeNav from '../Notice/NoticeNav';
 import { useLocation } from "react-router-dom";
 
 function LandingPage(props) {
-  const location = useLocation()
-  // const navigate = useNavigate();
+  const location = useLocation();
   const scrollRef = useRef();
 
   useEffect(() => {

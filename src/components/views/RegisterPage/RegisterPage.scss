@@ -2,9 +2,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 1248px;
+  width: 1300px;
+  max-width: 100%;
   margin: auto;
-  height: 60vh;
+  height: 64vh;
   background: var(--background--);
   overflow-y: auto;
 
@@ -13,6 +14,8 @@
     justify-content: center;
     align-items: center;
     width: 400px;
+    max-width: 85%;
+    height: 440px;
     border-radius: 10px;
     box-shadow: -5px -5px 10px var(--shadow-white--), 5px 5px 10px var(--shadow-grey--);
 
@@ -28,7 +31,7 @@
       background: var(--background--);
       border-radius: 10px;
 
-      h1{
+      h1 {
         margin: 0;
       }
 
@@ -42,7 +45,7 @@
         padding: 12px;
         border: 0;
         border-radius: 10px;
-        outline: none;        
+        outline: none;
         background: var(--input-white--);
         box-shadow: inset 7px 2px 10px var(--shadow-grey--), inset -5px -5px 12px var(--shadow-white--);
       }
@@ -65,8 +68,32 @@
   }
 }
 
-@media screen and (max-width: 1248px) {
+
+@media screen and (max-width: 1350px) {
   .join {
-    width: 100%;
+    height: 550px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .join{
+    height: 658px;
+  }
+}
+
+
+@media screen and (max-width: 350px) {
+  .join {
+    .container {
+      span{
+        display: none;
+      }
+
+      form {
+        input {
+          width: 115%;
+        }
+      }
+    }
   }
 }
