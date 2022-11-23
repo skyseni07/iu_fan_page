@@ -19,7 +19,7 @@ function App() {
       <div className='App'>
         <NavBar className='nav' />
         <Routes className='content'>
-          <Route exact path="/iu_fanpage" element={<LandingPage />} />
+          <Route exact path="/iu_fan_page" element={<LandingPage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/register" element={<RegisterPage />} />
           <Route path='/notice_board' element={<NoticeBoard />} />

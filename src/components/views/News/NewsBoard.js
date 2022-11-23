@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import './NewsBoard.scss'
 import NewsData from '../../../data/NewsData.json'
 
