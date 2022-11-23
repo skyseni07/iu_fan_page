@@ -1,20 +1,44 @@
 
 .photo_page {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 850px;
-  margin: 0px 0px 70px 0px;
-
+  width:980px;
+  height:400px;
+  max-width: 100%;
+  // padding: 0 50px;
+  margin: 20px 0px 70px 0px;
+  // background-color: yellow;
+  
   .photos_area {
-    width:880px;
+    position: absolute;
+    // background-color: pink;
+    max-width:90%;
+    // width:1100px;
+    top: 130px;
   }
 }
+
+// @media screen and (max-width: 767px) {
+//   .photo_page {
+//     height: auto;
+//     width: auto;
+
+//     .photos_area {
+//       position: static;
+//       width: auto;
+//       max-width: 100%;
+      
+//     }
+//   }
+// }
 
 
 @media screen and (max-width: 750px) {
   .photo_page {
     .photos_area {
+      
       width:518px;
     }
   }

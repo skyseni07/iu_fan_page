@@ -10,17 +10,46 @@
         overflow-y: auto;
 
         .new_container {
-                margin-bottom: 10px;
+                width: 1300px;
+                max-width: 100%;
+                padding: 0 50px;
 
                 .new {
-                        display: grid;
-                        grid-template-columns: 1fr 1fr;
-                        grid-gap: 20px;
-                        width: 822px;
+                        position: relative;
+                        max-width: 100%;
+                        width: 830px;
+                        height:160px;
                         margin: 0px auto;
 
-                        .Notice,
-                        .News {
+                        .Notice {
+                                position: absolute;
+                                width: 400px;
+                                max-width: 49%;
+                                top: 3px;
+                                left: 0;
+                                font-size: 16px;
+
+                                a {
+                                        color: var(--black--);
+                                }
+
+                                h2 {
+                                        margin: 0;
+                                }
+
+                                ul {
+                                        padding: 1px;
+                                        list-style: none;
+                                }
+                        }
+
+
+                        .News {               
+                                position: absolute;
+                                width: 400px;
+                                max-width: 49%;
+                                top: 3px;
+                                right: 0;
                                 font-size: 16px;
 
                                 a {
@@ -40,43 +69,24 @@
         }
 }
 
-@media screen and (max-width: 1367px) {
-        .landing {
-                height: 64vh;
-                overflow-x: hidden;
-        }
-}
-
-@media screen and (max-width: 750px) {
-        .landing {
-                height: 68.5vh;
-
-                .new_container {
-                        .new {
-                                width: 550px;
-                                align-items: center;
-                                justify-content: center;
-                                display: flex;
-                                flex-direction: column;
-                        }
-
-                        .Notice {
-                                margin-left: -23px;
-                                margin-bottom: 5px;
-                        }
-                }
-        }
-}
-
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 767px) {
         .landing {
                 .new_container {
                         .new {
-                                max-width: 30%;
-                        }
 
-                        .Notice {
-                                margin-left: 0px;
+                                height: auto;
+
+                                .Notice {
+                                        position: static;
+                                        width: auto;
+                                        max-width: 100%;
+                                }
+
+                                .News {
+                                        position: static;
+                                        width: auto;
+                                        max-width: 100%;
+                                }
                         }
                 }
         }
